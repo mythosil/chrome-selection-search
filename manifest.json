@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Selection-Search",
+  "description": "Search the selected words in a new tab",
+  "version": "1.0",
+  "background": {
+    "persistent": false,
+    "scripts": [ "background.js" ]
+  },
+  "content_scripts": [{
+    "matches": [ "http://*/*", "https://*/*" ],
+    "js": [ "selection-search.js" ]
+  }]
+}
